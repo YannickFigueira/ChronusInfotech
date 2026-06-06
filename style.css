@@ -42,6 +42,12 @@ h1#principal {
 
 }
 
+div:hover {
+    background-color: azure;
+}
+
 a:hover {
     background-color: aqua;
+    color: coral;
+    font-size: bold;
 }
