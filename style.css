@@ -24,3 +24,8 @@ body {
 h1, h2 {
     font-family: 'Times New Roman', Times, serif;
 }
+
+h1#principal {
+    background-color: seagreen;
+    color: white;
+}
