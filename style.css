@@ -71,3 +71,7 @@ p > a:hover {
     color: coral;
     font-size: bold;
 }
+
+footer::after{
+    content: 'Desenvolvido por YannickFigueira';
+}
