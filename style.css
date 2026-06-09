@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -12,6 +15,7 @@
     --cor3: #90ee90;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
 }
 
 * {
@@ -21,17 +25,23 @@
 
 body {
     /*background-color: #D4FFE6;*/
-    background-image: linear-gradient(to bottom, #2C4D3A, #2E8B57, #D4FFE6);
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1), var(--cor0));
     background-attachment: fixed;
     text-align: center;
     
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
 }
 
 main {
     background-color: white;
     border-radius: 20px 0px;
     box-shadow: 5px 5px 15px #254130a8;
-    width: auto;
+    min-width: 320px;
+    max-width: 850px;
     padding: 10px;
     margin: auto;
 }
@@ -50,7 +60,7 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #D4FFE6;
+    background-color: white;
     color: black;
 }
 
