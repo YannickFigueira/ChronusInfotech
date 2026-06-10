@@ -15,35 +15,26 @@
     --cor3: #90ee90;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulos: 'Times New Roman', Times, serif;
     --fonte-destaque: 'Bebas Neue', cursive;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
-    /*background-color: #D4FFE6;*/
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor0));
     font-family: var(--fonte-padrao);
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1), var(--cor0));
-    background-attachment: fixed;
     text-align: center;
-    
 }
 
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     background-color: var(--cor4);
     min-height: 50px;
-    text-align: center;
     padding-top: 20px;
-    
-    /*background-attachment: fixed;*/
 }
 
 header > h1 {
     font-family: var(--fonte-destaque);
+    color: white;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
@@ -70,7 +61,7 @@ nav > a:hover {
 
 main {
     background-color: white;
-    border-radius: 20px 0px;
+    border-radius: 0px 0px 20px 20px;
     box-shadow: 5px 5px 15px #254130a8;
     min-width: 300px;
     max-width: 850px;
@@ -79,43 +70,52 @@ main {
     margin-bottom: 30px;
 }
 
-section > a {
+section:hover{
+    display: block;
+    background-color: var(--cor0);
+    border-radius: 10px;
+}
+
+main h1 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor2);
+    margin-bottom: 5px;
+}
+
+main h2 {
+    color: var(--cor1);
+}
+
+main a.home_link {
     text-decoration: none;
     color: black;
 }
 
-section > a:hover {
-    background-color: var(--cor0);
+main p {
+    padding: 5px 0px;
 }
 
-img {
-    width: auto;
-}
-
-h1, h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-h1#principal {
-    color: white;
-}
-
-.programas:hover{
-    display: block;
-    background-color: var(--cor0);
-}
-
-a {
+main p > a {
     text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+    background-color: var(--cor0);
+    padding: 2px 6px;
 }
 
-p > a:hover {
-    background-color: var(--cor0);
-    color: var(--cor2);
+main p > a:hover {
+    color: var(--cor1);
     font-size: bold;
 }
 
+img.slide {
+    width: 95%;
+}
+
 footer {
-    background-color: black;
+    background-color: var(--cor2);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
