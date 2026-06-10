@@ -70,6 +70,10 @@ main {
     margin-bottom: 30px;
 }
 
+section {
+    padding: 5px 0px;
+}
+
 section:hover{
     display: block;
     background-color: var(--cor0);
