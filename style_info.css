@@ -31,11 +31,16 @@ header {
 }
 
 header > h1 {
+    display: inline-block;
     font-family: var(--fonte-destaque);
     color: white;
     font-size: 3em;
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    display: inline-block;
 }
 
 nav {
@@ -90,4 +95,17 @@ footer {
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+}
+
+footer > aside {
+    background-color: white;
+    color: black;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.zap {
+    border-radius: 5px;
 }
