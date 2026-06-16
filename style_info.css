@@ -98,7 +98,7 @@ main ul {
 }
 
 aside {
-    width: 230px;
+    width: 250px;
     padding: 5px;
     margin: auto;
     border: 1px solid var(--cor0);
@@ -110,7 +110,7 @@ aside h2 {
 }
 
 aside h2, aside h3{
-    color: var(--cor1);
+    color: var(--cor2);
 }
 
 footer {
