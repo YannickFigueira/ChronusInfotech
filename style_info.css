@@ -24,6 +24,7 @@
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+    text-align: center;
 }
 
 header {
@@ -31,6 +32,8 @@ header {
     min-height: 50px;
     padding-top: 20px;
     text-align: center;
+    
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
 header > h1 {
@@ -48,6 +51,7 @@ img {
 }
 
 nav {
+    text-align: left;
     background-color: var(--cor2);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
@@ -91,6 +95,22 @@ main p {
 main ul {
     list-style-type: square;
     list-style-position: inside;
+}
+
+aside {
+    width: 230px;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid var(--cor0);
+    border-radius: 5px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside h2, aside h3{
+    color: var(--cor1);
 }
 
 footer {
